@@ -5,6 +5,15 @@ body{
 footer{
     background-color: hsl(245, 100%, 11%);
     padding: 47px 40px;
+    color: white;
+}
+
+footer > div{
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
 }
 
 footer a{
@@ -21,16 +30,23 @@ footer a{
     padding: 10px 20px;
 }
 
+.heroLogos{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
 
 .heroForm input{
     border-radius: 32px;
     border: 1px solid #9B99AF;
-    height: 38px;
+    height: 48px;
     padding-left: 15px;
 }
 
 .heroForm input:focus{
     background-color: aliceblue;
+
 }
 
 .link{
@@ -47,10 +63,8 @@ h1{
 }
 
 h2{
-    margin: 0 0 19px 0;
+    margin: 60px 0 19px 0;
 }
-
-
 
 
 h1, h2{
@@ -59,6 +73,13 @@ h1, h2{
     font-weight: 400;
     line-height: 56px;
     
+}
+
+section{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    margin-bottom: 140px;
 }
 
 p{
@@ -77,12 +98,24 @@ p{
     margin: 0 0 40px 0;
 }
 
+
+header{
+    border-bottom: 1px solid #F0F0F0;
+    margin-bottom: 60px;
+}
+
 header  a{
         font-size: 18px;
         font-weight: 400;
         line-height: 24px;
         color: #050038;
         text-decoration: none;
+}
+
+.heroForm{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .heroForm+p{
@@ -96,13 +129,16 @@ header  a{
 nav ul{
     list-style: none;
     padding: 0;
-    
+    display: flex;
+    gap: 34px;
+
 }
 
 nav{
     padding: 33px 50px;
-    border-bottom: 1px solid #F0F0F0;
     margin-bottom: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .sectionList{
@@ -110,7 +146,8 @@ nav{
 }
 
 .sectionList li::marker{
-    content: "#"
+    // content: url('./img/galochka.svg');
+    content: "#";
 }
 
 .experiment{
@@ -134,4 +171,51 @@ nav{
 .img3{
     width: 550px;
     height: 498px;
+}
+
+#hero{
+    font-size: 16px;
+    display: flex;
+    gap: 65px;
+}
+
+
+
+.heroText{
+    font-size: 2em;
+}
+
+#HeroButton{
+    color: #FFFFFF;
+    background-color: #4262FF;
+    transition: background-color 1s, border-radius 2s 1s;
+    // height: 3em;
+    // border: 1px solid #4262FF;
+    // border-radius: 2em;
+    // padding: 1em 2em;
+    // font-size: 1em;
+}
+
+#HeroButton:hover{
+    background-color: #050038;
+    border-radius: 50%;
+}
+
+#HeroButton:active{
+    background-color: #544cac;
+}
+
+// .exp div{
+//     width: clamp(200px, 50%, 600px);
+//     height: 200px;
+//     background: #0b164d;
+//     margin: 10px;
+//     color: white;
+//     font-size: 24px;
+// }
+
+.section{
+    display: flex;
+    gap: 100px;
+
 }
