@@ -6,12 +6,17 @@
     --color-link-hover: rgb(175, 178, 191);
     --color-stroke: rgb(77, 80, 100);
     --border-8: 8px;
+    --border-10: 10px;
+    --layout-width: 1172px;
+    --gradient: linear-gradient(93.33deg, #D77BE6 9.26%, #BE63E6 42.32%, #6C38CC 104.58%);
+    --color-primary: rgb(108, 56, 204);
+    --color-primary-hover: rgb(79, 42, 150);
 }
 
 body{
     background: var(--color-bg) ; 
     margin: 0;
-    font-family: Fira Sans;
+    font-family: "Fira Sans", sans-serif;
     font-style: normal;
     font-weight: 400;
 }
