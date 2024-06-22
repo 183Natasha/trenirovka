@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Purpleschool</title>
+    <title>Школа разработки Purpleschool</title>
     <link rel="stylesheet" href="./styles/components.css">
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/global.css">
@@ -27,11 +27,13 @@
                     <li class="menu__item"><a href="#">База знаний</a></li>
                 </ul>
             </nav>
-            <a class="header__loging">
+            <a class="header__loging" href="#" aria-label="Вход в личный кабинет">
                 <img src="./img/user.svg" alt="Иконка пользвателя">
                 <div>Вход</div>
             </a>
-            <button class="header__mobile-menu-button">
+            <button class="header__mobile-menu-button" 
+                aria-expanded="false"
+                aria-haspopup="true">
                 <img src="./img/menu.svg" alt="Мобильное меню">
             </button>
         </div>
@@ -39,7 +41,7 @@
     <section class="section section_light">
         <div class="hero">
             <div class="hero__left">
-                <h1 class="hero__h1">Доступные курсы по 
+                <h1 class="hero__h1">Доступные курсы по <br/>
                     <span class="hero__h1_gradient">Разработке и DevOps </span></h1>
                 <div class="hero__cta">
                     <button class="button button_primary">Выбрать курс</button>
