@@ -121,8 +121,22 @@
     
 }
 
-.card-32{
+.card_light{
+    border-radius: var(--border-10);
+    background: var(--color-bg-light);
+    
+}
+
+.card_32{
     padding: 32px;
+}
+
+.card_48x24{
+    padding: 48px 24px;
+}
+
+.card_24x32{
+    padding: 24px 32px;
 }
 
 /*post-wrapper*/
