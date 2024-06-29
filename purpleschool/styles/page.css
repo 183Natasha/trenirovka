@@ -26,7 +26,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
+    /* text-fill-color: transparent; */
 }
 
 .hero__cta{
@@ -36,6 +36,27 @@
 
 .button-more{
     text-align: center;
+}
+
+.chip__wrapper{
+    display: flex;
+    gap: 24px;
+    margin-bottom: 32px;
+    overflow: scroll;
+    margin-right: -24px;
+    padding-left: 24px;
+    margin-left: -24px;
+    scrollbar-width: none;
+}
+
+.chip__wrapper::-webkit-scrollbar{
+    display: none;
+}
+
+.courses_wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 70px;
 }
 
 @media (max-width: 1200px) {
@@ -48,7 +69,9 @@
     .hero__cta{
         justify-content: center;
     }
-    
+    /* .courses_wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    } */
 }
 
 @media (max-width: 640px) {
@@ -62,6 +85,9 @@
     .hero{
         padding: 0 24px;
     }
+    /* .courses_wrapper{
+        grid-template-columns: 1fr;
+    } */
 }
 
 @media (max-width: 480px){
